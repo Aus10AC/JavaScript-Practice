@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+}
+
+/* Header */
+
+#mainHeader {
+  display: flex;
+  justify-content: space-between;
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(0,5,4,1);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(0,5,4,1);
+  box-shadow: 0px 0px 36px 0px rgba(0,5,4,1);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+/* Header logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.logo h5 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  word-spacing: .5rem;
+}
+
+/* Nav Container */
+
+#mainNavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search */
+
+.searchBar {
+  margin-right: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  border-radius: 10px;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: ghostwhite;
+  border: none;
+}
+
+.searchBar a {
+  margin: .5rem;
+}
+
+/* Nav */
+
+#mainNav {
+  margin-right: 1rem;
+  font-family: 'aleo', serif;
+}
+
+#mainNav ul {
+  display: flex;
+  padding: 1.2rem;
+}
+
+#mainNav ul li {
+  transition: 100ms ease-out;
+}
+
+#mainNav ul li:hover {
+  transform: scale(1.2);
+}
+
+#mainNav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1.2rem;
+}
+
+#mainNav i {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #mainNav {
+    display: none;
+  }
+}
+
+/* Dropdown Menu */
+
+.burgerMenu {
+
+}
+
+.burgerMenu span {
+  margin: 0 1.8rem 0 .5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#dropdown {
+  top: 3.4rem;
+  right: .01rem;
+  padding: 2rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#dropdown:hover {
+  display: block;
+}
+
+#dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'aleo', serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#dropdown a {
+
+}
+
+/* Mobile Dropdown */
+
+.burgerMenuMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .burgerMenu {
+    display: none;
+  }
+
+  .burgerMenuMobile {
+    display: block;
+  }
+
+  .burgerMenuMobile span {
+    margin: 0 1.8rem 0 .5rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Carousel */
+
+#carousel {
+  height: 20rem;
+  background-color: white;
+  background-image: url('../images/bo42.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.itemOne {
+  opacity: 0.95;
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(0,5,4,1);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(0,5,4,1);
+  box-shadow: 0px 0px 36px 0px rgba(0,5,4,1);
+  display: flex;
+}
+
+/* Main */
+
+main {
+  height: 70rem;
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+/* Section Title */
+
+main section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+section h1 {
+  position: relative;
+  padding: 2rem;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* article */
+
+.mainArticle {
+  height: 50rem;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+/* Article Menu */
+
+.articleMenu {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.articleMenu ul {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border-bottom: rgba(255, 255, 255, 0.9);
+}
+
+.articleMenu ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
