@@ -2,12 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="eSports, Gaming." />
-    <meta name="description" content="Trophy Count is an eSports application meant for any type of competitive gamer. It allows players to connect and network within their specific game genre.">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/index.css">
     <link rel="stylesheet" type="text/css" href="resources/css/spotify.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/profile.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Aleo:700" rel="stylesheet">
     <!-- Font Awesome -->
@@ -25,12 +24,12 @@
       <div id="mainNavContainer">
         <div class="searchBar">
           <input type="text" class="search" name="search" placeholder="      Search for players...">
-          <img src="resources/images/search.svg" class="searchIcon"  onclick="search()" title="search for teams, players and orgs." alt="search for teams, orgs and players.">
+          <img src="resources/images/search.svg" class="searchIcon" onclick="search()" title="search for teams, players and orgs." alt="search for teams, orgs and players.">
         </div>
         <nav id="mainNav">
           <ul>
             <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
           </ul>
         </nav>
         <div class="burgerMenu">
@@ -39,7 +38,7 @@
             <a href="#">Tournaments</a>
             <a href="#">Free Agents</a>
             <a href="#">Match Finder</a>
-            <a href="#">Register your Org</a>
+            <a href="#">Register an Org</a>
             <a href="#">Contact</a>
             <a href="#">Log Out</a>
           </div>
@@ -52,7 +51,7 @@
             <a href="#">Tournaments</a>
             <a href="#">Free Agents</a>
             <a href="#">Match Finder</a>
-            <a href="#">Register your Org</a>
+            <a href="#">Register an Org</a>
             <a href="#">Contact</a>
             <a href="#">Log Out</a>
           </div>
@@ -60,29 +59,34 @@
       </div>
     </header>
 
-    <div id="carousel">
-
-    </div>
-
     <main>
-<!--
-      <section class="infoContainer">
-        <div class="siteInfo">
-           <div class="generalInfo">
-            <h2>What is this?</h2>
-            <p>
-              This is a Web Application for eSports. The sole purpose is to provide Gamers,
-              Organizations, Teams and Friends an easier way of connecting.
-            </p>
+
+      <nav class="profileNav">
+        <div class="profile">
+          <!-- Profile pic -->
+        </div>
+        <div class="userBio">
+          <div class="userName">
+            <h3>Username</h3>
+          </div>
+          <div class="userSocial">
+            <a href=""> <i class="fab  fa-twitter"></i> </a>
+            <a href=""> <i class="fab  fa-instagram"></i> </a>
+            <a href=""> <i class="fab  fa-snapchat-ghost"></i> </a>
+            <a href=""> <i class="fab  fa-youtube"></i> </a>
+            <a href=""> <i class="fab  fa-twitch"></i> </a>
+          </div>
+          <div class="userAbout">
+            <!-- <input type="text" name="userAbout" value="" placeholder="Tell us about yourself..."> -->
           </div>
         </div>
+      </nav>
+
+      <section class="wall">
+
+
       </section>
--->
     </main>
-
-    <footer>
-
-    </footer>
 
 <!-- Spotify Playlist -->
     <div class="spotifyPlaylist">
@@ -134,7 +138,7 @@
     </div>
 
 
-
+  <script type="text/javascript" src="resources/js/profile.js"></script>
   <script type="text/javascript" src="resources/js/spotifyControls.js"></script>
   <script type="text/javascript" src="resources/js/main.js"></script>
   </body>
